@@ -1,0 +1,26 @@
+try:
+    notu = int(input("notunu gir: "))
+    if notu == 0:
+        print("sınava girmedi. FG")
+    elif notu > 0 and notu <= 29:
+        print("başarısız. FF")
+    elif notu >= 30 and notu <= 39:
+        print("başarısız. FD")
+    elif notu >= 40 and notu <= 49:
+        print("başarısız. DD")
+    elif notu >= 50 and notu <= 59:
+        print("koşullu geçti. DC")
+    elif notu >= 60 and notu <= 69:
+        print("başarılı. CC")
+    elif notu >= 70 and notu <= 74:
+        print("başarılı. CB")
+    elif notu >= 75 and notu <= 79:
+        print("başarılı. BB")
+    elif notu >= 80 and notu <= 89:
+        print("başarılı. BA")
+    elif notu >= 90 and notu <= 100:
+        print("başarılı. AA")
+    else:
+        print("Not 0-100 arasında olmalı.")
+except ValueError:
+    print("Lütfen sadece sayı giriniz!")
