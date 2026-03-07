@@ -1,0 +1,17 @@
+sayi = 21
+
+while True:
+    tahmin = int(input("Bir sayı girin 0-100 arası: "))
+
+    if tahmin < 0 or tahmin > 100:
+        print("aralık dışında sayı verdiniz.")
+
+    elif tahmin < sayi:
+        print("daha büyük sayı gir:")
+
+    elif tahmin > sayi:
+        print("daha küçük bir sayı gir:")
+
+    else:
+        print("doğru tahmin")
+        break
