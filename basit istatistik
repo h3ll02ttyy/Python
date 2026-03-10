@@ -1,0 +1,42 @@
+count = 0
+toplam = 0
+minsayi = None
+maxsayi = None
+tek = 0
+cift = 0
+
+while True:
+    try:
+        sayi = int(input("sayı gir (bitirmek için 0): "))
+        
+        if sayi == 0:
+            break
+
+        adet += 1
+        toplam += sayi
+
+        if minsayi is None or sayi < minsayi:
+            minsayi = sayi
+
+        if maxsayi is None or sayi > maxsayi:
+            maxsayi = sayi
+
+        if sayi % 2 == 0:
+            cift += 1
+        else:
+            tek += 1
+
+    except ValueError:
+        print("sayı gir")
+
+if adet > 0:
+    ortalama = toplam / adet
+    print("Sayı adedi:", adet)
+    print("Toplam:", toplam)
+    print("Minimum:", minsayi)
+    print("Maksimum:", maxsayi)
+    print("Ortalama:", ortalama)
+    print("Tek sayı sayısı:", tek)
+    print("Çift sayı sayısı:", cift)
+else:
+    print("hiç sayı girilmedi")
